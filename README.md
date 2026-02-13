@@ -265,7 +265,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **Email**: kumaripriyee73@gmail.com
 - **GitHub**: [@Priyakumari0307](https://github.com/Priyakumari0307)
-- **Portfolio**: [Live Demo](https://your-portfolio-url.vercel.app)
+- **Portfolio**: [Live Demo](https://portfolio-97h6.vercel.app/)
 
 ---
 
