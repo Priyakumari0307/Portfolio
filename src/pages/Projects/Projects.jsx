@@ -176,12 +176,12 @@ function Card({
       >
         {/* Modern split card design */}
         <div className="w-full flex flex-col md:flex-row bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
-          {/* Image section - full width on mobile, 65% on desktop */}
-          <div className="w-full md:w-[75%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
+          {/* Image section - full width on mobile, 75% on desktop */}
+          <div className="w-full md:w-[75%] h-[250px] md:h-auto md:min-h-[400px] lg:min-h-[450px] relative overflow-hidden">
             <motion.img
               src={url}
               alt={title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.4 }}
