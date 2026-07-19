@@ -1,5 +1,4 @@
 import HeroImg from "@/assets/images/hero.jpeg";
-import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
   return (

@@ -5,9 +5,20 @@ import PropTypes from "prop-types";
 import wanderlustImage from "../../assets/images/wanderlust.png";
 import Vocal_Desk from "../../assets/images/VocalDesk.png";
 import ResumeBuilderImage from "../../assets/images/ResumeBuilder.png";
-// import ResumeBuilder from "../../assets/images/ResumeBuilder.png";
+import Healify from "../../assets/images/Healify.png";
+
 
 const projects = [
+  {
+    title: "Healify",
+    description:
+      "A comprehensive mental wellness platform designed to support emotional well-being through AI-powered insights, guided self-care, and professional resources. The app provides personalized mood tracking, AI-driven conversational support, evidence-based relaxation techniques, and a curated library of wellness tools to help users navigate daily challenges and cultivate lasting mental resilience.",
+    src: "Healify.png",
+    link: Healify,
+    color: "#f3e9ff",
+    githubLink: "https://github.com/Priyakumari0307/Healify",
+    liveLink: "https://healify-omega.vercel.app/",
+  },
   {
     title: "Wanderlust",
     description:
@@ -107,6 +118,7 @@ export default function Projects() {
         <section className="text-white w-full bg-slate-950">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
+            const startRange = projects.length > 1 ? (i * 0.85) / (projects.length - 1) : 0;
             return (
               <Card
                 key={`p_${i}`}
@@ -116,7 +128,7 @@ export default function Projects() {
                 color={project.color}
                 description={project.description}
                 progress={scrollYProgress}
-                range={[i * 0.25, 1]}
+                range={[startRange, 1]}
                 targetScale={targetScale}
                 githubLink={project.githubLink}
                 liveLink={project.liveLink}
